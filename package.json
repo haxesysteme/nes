@@ -43,7 +43,6 @@
   "scripts": {
     "build-client": "mkdir -p dist; babel lib/client.js --out-file dist/client.js",
     "test": "npm run-script build-client && node node_modules/lab/bin/lab -a code -t 100 -L",
-    "prepare": "npm run-script build-client",
     "test-cov-html": "node node_modules/lab/bin/lab -a code -r html -o coverage.html"
   },
   "license": "BSD-3-Clause"
